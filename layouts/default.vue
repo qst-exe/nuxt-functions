@@ -1,8 +1,25 @@
 <template>
   <div>
+    <span>defalut layout</span>
+    <AppNavigation />
+    <hr>
     <nuxt/>
+    <hr>
+    <footer>
+      footer
+    </footer>
   </div>
 </template>
+
+<script>
+  import  AppNavigation from '~/components/AppNavigation.vue'
+
+  export default {
+    components: {
+      AppNavigation
+    }
+  }
+</script>
 
 <style>
 html {
@@ -30,10 +47,10 @@ html {
   padding: 10px 30px;
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
+  .button--green:hover {
+    color: #fff;
+    background-color: #3b8070;
+  }
 
 .button--grey {
   display: inline-block;
